@@ -1,0 +1,49 @@
+body {
+    overflow: hidden;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.colorBtn {
+    background-color: #333;
+    border-radius: 10px 10px 10px 10px;
+    border: 0;
+    padding: 0.5vw;
+    color: white;
+    font-size: 2em;
+    font-family: cursive, serif;
+}
+
+.colorBtn:hover {
+    background-color: #222;
+}
+
+.circle {
+    background-color: palegreen;
+    color: red;
+    z-index: -1;
+    box-shadow: inset 20vw 20vw 20vw 20vw rgb(0, 0, 0, 30%);
+    border-radius: 50%;
+    transform-origin: center;
+    position: absolute;
+    top: calc(-100vw + 50vh);
+    left: -50vw;
+    width: 200vw;
+    height: 200vw;
+    animation-name: scale-circle;
+    animation-duration: 3s;
+}
+
+@keyframes scale-circle {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
