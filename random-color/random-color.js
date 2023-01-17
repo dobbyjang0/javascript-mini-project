@@ -1,10 +1,10 @@
 const $colorBtn = document.querySelector(".colorBtn");
-const $circle = document.querySelector(".circle");
 const $body = document.querySelector("body");
 
 $colorBtn.addEventListener("click", () => {
-    const randomColor = getRandomColor();
     const $newCircle = document.createElement("div");
+    const randomColor = getRandomColor();
+
     $newCircle.classList.add("circle");
     $newCircle.style.backgroundColor = randomColor;
 
@@ -58,6 +58,13 @@ function getRandomWord() {
         "Love",
         "Apathy",
         "Family",
+        "Infinity",
+        "Trauma",
+        "Nothing",
+        "All",
+        "Meaningless",
+        "Blank",
+        "Futility",
     ];
 
     return wordArr[~~(Math.random() * wordArr.length)];
