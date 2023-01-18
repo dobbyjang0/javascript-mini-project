@@ -65,6 +65,20 @@ function getRandomWord() {
         "Meaningless",
         "Blank",
         "Futility",
+        "Lies",
+        "Shame",
+        "Self-Worth",
+        "Fear",
+        "Loneliness",
+        "Failure",
+        "Result",
+        "Honor",
+        "Hope",
+        "Guilty",
+        "Alienation",
+        "Wish",
+        "Substance",
+        "Success",
     ];
 
     return wordArr[~~(Math.random() * wordArr.length)];
