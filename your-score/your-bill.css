@@ -1,0 +1,121 @@
+/*https://www.youtube.com/watch?v=3Eb6FtjkZ_k&ab_channel=CodingNepal*/
+
+body {
+    background-color: #e0e0e0;
+}
+
+.checker {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: calc(50vh - 150px);
+    left: calc(50vw - 250px);
+    border-radius: 50px;
+    background-color: #e0e0e0;
+    box-shadow: 35px 35px 69px #bebebe, -35px -35px 69px #ffffff;
+    padding: 20px;
+    font-family: Century Gothic, sans-serif;
+}
+
+.checker p {
+    text-align: center;
+}
+
+.slider__wrapper {
+    width: calc(100% - 35px);
+}
+
+.slider__input {
+    -webkit-appearance: none;
+    appearance: none;
+    width: calc(100% + 35px);
+    height: 30px;
+    border-radius: 15px;
+    background: linear-gradient(to right, #a899fe 50%, #e0e0e0 50%);
+    box-shadow: 7px 7px 10px #bebebe, -7px -7px 10px #ffffff;
+}
+
+.slider__input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 35px;
+    height: 35px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 7px 7px 10px #bebebe, -7px -7px 10px #ffffff;
+}
+
+.slider__number {
+    position: relative;
+    left: 50%;
+    top: -10px;
+    width: 50px;
+    height: 50px;
+    color: #a899fe;
+    transform: scale(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slider__number span {
+    position: relative;
+    z-index: 2;
+}
+
+.slider__number span::after {
+    content: "";
+    position: absolute;
+    background-color: #e0e0e0;
+    left: -5px;
+    width: 40px;
+    height: 40px;
+    transform: rotate(45deg);
+    border-radius: 50% 50% 0 50%;
+    box-shadow: 7px 7px 10px #bebebe, -7px -7px 10px #ffffff;
+    z-index: -1;
+}
+
+.slider__number.show {
+    transform: scale(1);
+    position: relative;
+    z-index: 2;
+}
+
+.count__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.count__button {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    border-radius: 50%;
+    box-shadow: 7px 7px 10px #bebebe, -7px -7px 10px #ffffff;
+    text-align: center;
+    color: #a899fe;
+    font-weight: bold;
+    border: 0;
+}
+
+.count__button:active {
+    background: #e0e0e0;
+    box-shadow: inset 7px 7px 10px #bebebe, inset -7px -7px 10px #ffffff;
+}
+
+.count__input {
+    height: 40px;
+    background: #e0e0e0;
+    border: 0;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: inset 7px 7px 10px #bebebe, inset -7px -7px 10px #ffffff;
+}
+
+.count__input::-webkit-outer-spin-button,
+.count__input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
